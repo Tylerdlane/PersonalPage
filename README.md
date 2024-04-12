@@ -19,10 +19,10 @@ An About Me Page
 
 # Hobbies
 - Disk Golf
-    Yet to get an Ace( Hole-in-one ), but one day it will happen!
+    - Yet to get an Ace( Hole-in-one ), but one day it will happen!
 - Kayaking 
-    You can find me out on Lake Pflugerville when the weather is nice!
+    - You can find me out on Lake Pflugerville when the weather is nice!
 - Hiking
-    Any trail, Any time!
+    - Any trail, Any time!
 - Coding
-    It's a learning journey 
+    - It's a learning journey 
