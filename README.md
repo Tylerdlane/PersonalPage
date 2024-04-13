@@ -4,7 +4,8 @@ An About Me Page
 ## Name
 **Tyler Lane**
 ### Brief Summary
-
+  Hi my name is Tyler, I graduated highschool in 2012 and started working in the service industry. I quickly found the love of my life and started a family. I've been married 8 years and have 2 wonderful boys! I'm looking to expand my knowledge in software dev. and much more! Life is a journey, and we learn everyday. It's wether or not we practice and apply what we learned to master our skills.
+  
 >[!IMPORTANT]
 > # Experience
 ## Coding
