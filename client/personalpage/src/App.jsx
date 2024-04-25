@@ -1,10 +1,8 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [likes, setLikes] = useState(0)
 
 
   return (
@@ -12,10 +10,26 @@ function App() {
       <div className="heading">
         <h1 id="greeting">Hi, Welcome to my Profile</h1>
         <div>
-          <label htmlFor="like-btn">Like My Page? Give it a Click --></label>
-          <button type="button" className="btn btn-secondary" id="like-btn" onClick={() => setCount(count => count + 1)}>{count} : Likes</button>
+          <label htmlFor="like-btn">Like My Page? Give it a Like!</label>
+          <button type="button" className="btn btn-secondary" id="like-btn" onClick={() => setLikes(count => count + 1)}>{likes} : Likes</button>
         </div>
+      </div>
+      <div className="container">
+        <h1>Hobbies</h1>
+        <div className='container'>
+          <div className='hobbies'></div>
+          <div className='hobbies'></div>
+          <div className='hobbies'></div>
+          <div className='hobbies'></div>
         </div>
+        <h1>Family</h1>
+        <div className='container'>
+          <div className='hobbies'></div>
+          <div className='hobbies'></div>
+          <div className='hobbies'></div>
+          <div className='hobbies'></div>
+        </div>
+      </div>
     </>
   )
 }

@@ -16,3 +16,15 @@
   transition: 0.75s;
 }
 
+.container {
+  margin: 0 auto;
+}
+
+.hobbies {
+  display: inline-block;
+  margin: 7px;
+  height: 500px;
+  width: 300px;
+  background-color: silver;
+  box-shadow: black 3px 2px;
+}
