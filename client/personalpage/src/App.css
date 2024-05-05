@@ -4,6 +4,10 @@
   padding: 2rem;
   text-align: center;
 }
+body  {
+    background-image: linear-gradient(to bottom right, red, yellow);
+  }
+
 
 .btn {
   border: black solid 3px;
@@ -18,13 +22,25 @@
 
 .container {
   margin: 0 auto;
+  justify-content: center;
+  padding: 2rem;
 }
 
-.hobbies {
-  display: inline-block;
-  margin: 7px;
-  height: 500px;
-  width: 300px;
-  background-color: silver;
-  box-shadow: black 3px 2px;
+.cardContainer {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.835);
+  color:white;
+}
+
+.carousel img {
+  width: 700px;  
+  height: 500px; 
+  object-fit: cover; /* This will ensure that your images cover the whole area without distorting the aspect ratio */
 }
