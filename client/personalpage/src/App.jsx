@@ -27,6 +27,8 @@ getQuote();
     <>
       <div className="quote">
             <h1>Quote of the Day</h1>
+            </div>
+            <div className="quoteContainer">
             <p>{quote}</p>
             <p>{author}</p>
             </div>
