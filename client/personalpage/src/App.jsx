@@ -1,14 +1,38 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 
 function App() {
-  const [likes, setLikes] = useState(0)
+  const [likes, setLikes] = useState(0);
+  const [quote, setQuote] = useState("");
+  const [author, setAuthor] = useState("");
+  //useEffect to get a random quote from the api
+useEffect(() => {
+  const getQuote = async () => {
+    fetch("https://type.fit/api/quotes")
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(data) {
+      console.log(data);
+      //set a random quote from the array of quotes and set the author as well in a new state called author and setAuthor the author and qutoe need to be from the same array index
+      const random = Math.floor(Math.random() * data.length);
+      setQuote(data[random].text);
+      setAuthor(data[random].author);
+    });
+  }
+getQuote();
 
-
+},[]);
   return (
     <>
+      <div className="quote">
+            <h1>Quote of the Day</h1>
+            <p>{quote}</p>
+            <p>{author}</p>
+            </div>
       <div className="heading">
         <h1 id="greeting">Family</h1>
+        </div>
         <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
           <div className="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -38,16 +62,7 @@ function App() {
               </div>
             </div>
           </div>
-          <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Next</span>
-          </button>
         </div>
-      </div>
       <div>
         <h1>Hobbies</h1>
       </div>
@@ -86,6 +101,7 @@ function App() {
           <label htmlFor="like-btn">Like My Page? Give it a Like!</label>
           <button type="button" className="btn btn-secondary" id="like-btn" onClick={() => setLikes(count => count + 1)}>{likes} : Likes</button>
         </div>
+
     </>
   )
 }

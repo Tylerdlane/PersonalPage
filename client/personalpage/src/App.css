@@ -40,7 +40,13 @@ body  {
 }
 
 .carousel img {
-  width: 700px;  
+  width: 100%;
   height: 500px; 
-  object-fit: cover; /* This will ensure that your images cover the whole area without distorting the aspect ratio */
+  object-fit: scale-down;
+}
+
+.quote {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: white;
 }
