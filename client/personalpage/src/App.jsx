@@ -25,8 +25,9 @@ getQuote();
 },[]);
   return (
     <>
+    <p>Check Out My: <a href="https://www.linkedin.com/in/tylerlane94/" id="linkedIn" target="_blank">LinkedIn</a> / <a href="https://github.com/Tylerdlane" id="github" target='_blank'>GitHub</a> </p>
       <div className="quote">
-            <h1>Quote of the Day</h1>
+        <h1>Quote of the Day</h1>
             </div>
             <div className="quoteContainer">
             <p>{quote}</p>
